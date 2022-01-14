@@ -1,0 +1,144 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lobster&family=Poppins:wght@500&family=Yeseva+One&display=swap');
+
+/*--------------------------------------- 
+-----------------------------------------
+            header style
+-----------------------------------------
+----------------------------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+   
+}
+header{
+    
+        display:flex;
+        flex-direction: column;     
+}
+.first-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button{
+   color: whitesmoke;
+    width: 196px;
+    height: 44px;
+    background: #E02C6D;
+    border-radius: 41px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headers{
+     display: flex;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+.top-part{
+   
+width: 582px;
+height: 270px;
+left: 120px;
+top: 285px;
+
+}
+.main-cam{
+  background: url(images/Circle\ design.svg);  
+  
+
+}
+hr{
+    border: 1px solid#D1D1D1;
+    margin-bottom: 27px;
+}
+
+
+/* ----------------------------------
+-------------------------------------
+            products style
+-------------------------------------
+         
+------------------------------------*/
+.section-title{
+    text-align: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-column-gap:24px;
+}
+.course .gadget-image img{
+    width: 300px;
+    height: 256px;
+}
+.gadget-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.gadget-price{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+    
+}
+.fa-star.empty{
+    color: #AEAEAE;
+    
+}
+.footer{
+   background-color:  #0a0826;
+   color:  #FFFFFF;
+   text-align: center;
+}
+.f-tag{
+    size: 24px;
+}
+/* --------------------------
+-----------------------------
+         media queries
+-----------------------------
+         moblie devices
+---------------------------- */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .headers,  .products{
+       
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
