@@ -23,13 +23,11 @@ body{
 header{
     
     display:flex;
-    flex-direction: column;     
+    flex-direction: column; 
+        
 }
-.first-part{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
+
 
 #first-button {
    color: whitesmoke;
@@ -47,7 +45,7 @@ header{
 
 .headers{
      display: flex;
-     flex-direction: wrap;
+     justify-content: center;
     
 }
 
@@ -98,14 +96,9 @@ main{
     text-align: center;
 }
 .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 870px;
-    margin-top: 21px;
-    border-radius: 5px;
-    margin: auto;
-    
+   
+     margin: auto;
+     width: 80%;
 }
 
 
@@ -143,17 +136,16 @@ main{
     color: #AEAEAE;
     
 }
-.button{
-    position: relative;
-  
-    margin-left: 720px;
-}    
+
 .second-button{
-    color:  #E02C6D;
-    padding: 15px 25px; 
+   
+    display: block;
     text-decoration: none;
+    font-weight: bold;
     font-size: 16px;
-    font-weight: bold;  
+    color: rgba(224, 44, 109, 0.87);
+    text-align: right;
+    margin-bottom: 80px;
 }
 
 .fa-arrow-right{
@@ -221,6 +213,11 @@ s-title{
 @media only screen and (max-width:688px) {
     .container{
         width: 100%;
+    }
+    .headers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .headers, .support-system, .products{
        
