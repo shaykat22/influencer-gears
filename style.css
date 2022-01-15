@@ -8,14 +8,22 @@
 -----------------------------------------
 ----------------------------------------*/
 body{
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
    
 }
+.first-title{
+    margin: 87px 240px;
+}
+.first-part{
+    margin-bottom: 200px;
+    
+}
 header{
     
-        display:flex;
-        flex-direction: column;     
+    display:flex;
+    flex-direction: column;     
 }
 .first-part{
     display: flex;
@@ -23,70 +31,98 @@ header{
     align-items: center;
 }
 
-#button{
+#first-button {
    color: whitesmoke;
     width: 196px;
     height: 44px;
     background: #E02C6D;
     border-radius: 41px;
+    border: none;
+    text-decoration: none;
+    
 }
 
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 .headers{
      display: flex;
+     flex-direction: wrap;
     
 }
-.container{
-    display: flex;
-    align-items: center;
-    width: 870px;
-    padding: 30px;
-    margin-top: 21px;
-    border-radius: 5px;
-}
-.top-part{
-   
+
+.top-part{   
 width: 582px;
 height: 270px;
 left: 120px;
 top: 285px;
-
-}
-.main-cam{
-  background: url(images/Circle\ design.svg);  
-  
-
-}
-hr{
-    border: 1px solid#D1D1D1;
-    margin-bottom: 27px;
 }
 
+.main-cam> img{
+  background: url(images/Circle\ design.svg); 
+  height: 220;
+  width: 414; 
+}
+.logo-sec{
+    margin-bottom: 80px;
+    
+}
+.logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gainsboro;
+    margin: 0 165px;
+    border-left: none;
+    border-right: none;
 
+}
+.logos{
+    padding: 26px 42px;
+
+}
 /* ----------------------------------
 -------------------------------------
             products style
 -------------------------------------
          
 ------------------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+   margin: auto;
+   padding-bottom: 50px;
+}
 .section-title{
     text-align: center;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 870px;
+    margin-top: 21px;
+    border-radius: 5px;
+    margin: auto;
+    
+}
+
+
 .products{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    grid-column-gap:24px;
+    grid-column-gap:30px;
+    
 }
-.course .gadget-image img{
-    width: 300px;
-    height: 256px;
+.gadget{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+    padding: 15px;
 }
+
+    
+
 .gadget-info{
     display: flex;
     align-items: center;
@@ -107,10 +143,71 @@ hr{
     color: #AEAEAE;
     
 }
+.button{
+    position: relative;
+  
+    margin-left: 720px;
+}    
+.second-button{
+    color:  #E02C6D;
+    padding: 15px 25px; 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;  
+}
+
+.fa-arrow-right{
+    padding-left: 10px;
+   
+}
+
+/* --------------support---------------- */
+
+s-title{
+    align-items: center;
+    justify-content: center;
+}
+.support{
+   text-align: center;
+   margin: 0 165px;
+   padding-bottom: 100px;
+}
+.product-support{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15) ;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.support-button{
+     text-decoration: none;
+     color:#0a0826;
+     font-size: 18px;
+     width: 50px;   
+}
+.fa-angle-right{
+    margin-left: 10px;
+}
+.support-button:hover{
+    color:  #E02C6D;
+}
+
+.support-system{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-column-gap:30px;
+}   
+/*------------------------------- 
+             footer
+ --------------------------------*/
 .footer{
    background-color:  #0a0826;
    color:  #FFFFFF;
    text-align: center;
+   padding-bottom: 50px;
+}
+.fab{
+   padding-left: 15px;
 }
 .f-tag{
     size: 24px;
@@ -125,9 +222,12 @@ hr{
     .container{
         width: 100%;
     }
-    .headers,  .products{
+    .headers, .support-system, .products{
        
         grid-template-columns: repeat(1, 1fr);
+    }
+    .logos, .logo{
+        grid-template-columns: repeat(2, 1fr);
     }
     
 }
@@ -137,8 +237,11 @@ hr{
         width: 100%;
     }
 
-    .products{
+    .headers, .support-system, .products{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .logos, .logo{
+        grid-template-columns: repeat(3, 1fr);
     }
     
 }
